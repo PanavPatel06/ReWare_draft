@@ -7,22 +7,22 @@ import type { Item } from './types';
 // and paste the links here.
 
 export const dummyItems: Item[] = [
+  // {
+  //   id: '1',
+  //   title: 'Vintage Denim Jacket',
+  //   category: 'Outerwear',
+  //   condition: 'Good',
+  //   brand: "Levi's",
+  //   // Replace this with your image URL
+  //   images: ['https://drive.google.com/file/d/1BoSXqQi5xpnzX-cEvvupuxHSBvHmaKu4/view?usp=drive_link'],
+  //   uploaderName: 'Jane Doe',
+  //   points: 1500,
+  //   originalPrice: 3000,
+  //   valuationStatus: 'auto',
+  //   description: "A classic vintage denim jacket from the 90s. Perfectly worn in, with a timeless style that never fades. Features button-front closure, two chest pockets, and adjustable waist tabs."
+  // },
   {
     id: '1',
-    title: 'Vintage Denim Jacket',
-    category: 'Outerwear',
-    condition: 'Good',
-    brand: "Levi's",
-    // Replace this with your image URL
-    images: ['https://images.unsplash.com/photo-1543087903-1ac237e2e54d?q=80&w=1887'],
-    uploaderName: 'Jane Doe',
-    points: 1500,
-    originalPrice: 3000,
-    valuationStatus: 'auto',
-    description: "A classic vintage denim jacket from the 90s. Perfectly worn in, with a timeless style that never fades. Features button-front closure, two chest pockets, and adjustable waist tabs."
-  },
-  {
-    id: '2',
     title: 'Floral Summer Dress',
     category: 'Dresses',
     condition: 'Like new',
@@ -35,20 +35,20 @@ export const dummyItems: Item[] = [
     valuationStatus: 'auto',
     description: "A beautiful floral print summer dress, perfect for warm weather. Lightweight fabric with a flattering A-line silhouette. Worn only once."
   },
+  // {
+  //   id: '3',
+  //   title: 'Leather Ankle Boots',
+  //   category: 'Shoes',
+  //   condition: 'Good',
+  //   brand: 'Dr. Martens',
+  //    // Replace this with your image URL
+  //   images: ['https://drive.google.com/file/d/19z17MVjKQdpQR2orYBRr61KeJ9iZtz6Z/view?usp=drive_link'],
+  //   uploaderName: 'Mike Johnson',
+  //   points: 2500,
+  //   description: "Classic leather ankle boots with a sturdy sole. Some minor scuffs but in great overall condition with plenty of life left."
+  // },
   {
-    id: '3',
-    title: 'Leather Ankle Boots',
-    category: 'Shoes',
-    condition: 'Good',
-    brand: 'Dr. Martens',
-     // Replace this with your image URL
-    images: ['https://images.unsplash.com/photo-1608256246200-53e6357b1d2a?q=80&w=1887'],
-    uploaderName: 'Mike Johnson',
-    points: 2500,
-    description: "Classic leather ankle boots with a sturdy sole. Some minor scuffs but in great overall condition with plenty of life left."
-  },
-  {
-    id: '4',
+    id: '2',
     title: 'Striped Cotton T-Shirt',
     category: 'Tops',
     condition: 'New with tags',
@@ -61,20 +61,20 @@ export const dummyItems: Item[] = [
     valuationStatus: 'manual',
     description: "A brand new, unworn striped t-shirt made from 100% soft cotton. A versatile wardrobe staple."
   },
+  // {
+  //   id: '5',
+  //   title: 'High-Waisted Skinny Jeans',
+  //   category: 'Bottoms',
+  //   condition: 'Good',
+  //   brand: 'Topshop',
+  //   // Replace this with your image URL
+  //   images: ['https://drive.google.com/file/d/1BoSXqQi5xpnzX-cEvvupuxHSBvHmaKu4/view?usp=drive_link'],
+  //   uploaderName: 'Jane Doe',
+  //   points: 900,
+  //   description: "Comfortable and stylish high-waisted skinny jeans in a dark wash. Minimal signs of wear."
+  // },
   {
-    id: '5',
-    title: 'High-Waisted Skinny Jeans',
-    category: 'Bottoms',
-    condition: 'Good',
-    brand: 'Topshop',
-    // Replace this with your image URL
-    images: ['https://images.unsplash.com/photo-1604176354204-926873782855?q=80&w=1887'],
-    uploaderName: 'Jane Doe',
-    points: 900,
-    description: "Comfortable and stylish high-waisted skinny jeans in a dark wash. Minimal signs of wear."
-  },
-  {
-    id: '6',
+    id: '3',
     title: 'Silk Scarf',
     category: 'Accessories',
     condition: 'Like new',
