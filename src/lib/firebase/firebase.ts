@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp, getApps, getApp } from "firebase/app";
+import { initializeApp, getApps, getApp, type FirebaseOptions } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage }from "firebase/storage";
@@ -8,7 +8,7 @@ import { getStorage }from "firebase/storage";
 // IMPORTANT: You need to replace the placeholder values below with your actual
 // Firebase project's configuration. You can find these in your Firebase
 // project settings.
-const firebaseConfig = {
+const firebaseConfig: FirebaseOptions = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
@@ -19,11 +19,16 @@ const firebaseConfig = {
 
 // Initialize Firebase
 let app;
+// This check prevents an error when the environment variables are not set.
 if (firebaseConfig.apiKey && firebaseConfig.projectId) {
-    app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+  app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 } else {
-    console.error("Firebase config is missing. Please check your .env file.");
+  console.warn("Firebase config is missing. Please check your .env.local file and ensure all NEXT_PUBLIC_FIREBASE_ variables are set.");
+  // Provide a dummy app to prevent the app from crashing.
+  // This will result in Firebase features failing, but the app itself will run.
+  app = !getApps().length ? initializeApp({}) : getApp();
 }
+
 
 const auth = getAuth(app);
 const db = getFirestore(app);
